@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+a:visited,
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+nav.navbar{
+    display: flex;
+    gap: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    background-color: rgb(123, 212, 212);
+    opacity: 0.8;
+    font-size: 20px;
+}

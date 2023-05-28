@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/user-settings.css">
+</head>
+
+<body onload="onInit()">
+    <section>
+        <nav class="navbar">
+            <a href="index.html" class="Home">home</a>
+            <a href="map.html" class="Map">map</a>
+            <a href="user-prefs.html" class="Settings">settings page</a>
+        </nav>
+        <header>
+            <h1>welcome to the settings</h1>
+            <h2>decorate as you wish</h2>
+        </header>
+    </section>
+    <section class="flex-box">
+        <form onsubmit="onSubmit(event)"><!--you will need to make function, and cancel the refresh-->
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div>
+                <label for="bgc">Background Color:</label>
+                <input type="color" id="bgc" name="bgc">
+            </div>
+            <div>
+                <label for="txtColor">Text Color:</label>
+                <input type="color" id="txtColor" name="txtColor">
+            </div>
+            <div>
+                <label for="zoomFactor">Zoom Factor:</label>
+                <input type="range" id="zoomFactor" name="zoomFactor" min="1" max="21" step="1" value="16">
+            </div>
+            <!--you want small number over the bar, to show the zoom-->
+            <div>
+                <label for="startLoc">Map Start Location:</label>
+                <input type="text" id="startLoc" name="startLoc" pattern="[\d]{1,2,3},[\d]{1,2,3}">
+            </div>
+            <div>
+                <button>save</button>
+            </div>
+        </form>
+    </section>
+</body>
+    <script src="js/services/user-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+</html>

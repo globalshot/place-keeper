@@ -1,0 +1,39 @@
+section.flex-box{
+    background-color: rgb(182, 86, 86);
+    margin-inline: 20px;
+    width: 600px;
+}
+
+section form{
+    padding: 20px;
+}
+
+section form label{
+    position: relative;
+    margin-bottom: 20px;
+}
+section form input{
+    margin-bottom: 20px;
+    width: 400px;
+    justify-self: flex-end;
+}
+section form div{
+    display: grid;
+    grid-auto-flow: column;
+}
+section form button{
+    justify-self: center;
+    height: 30px;
+    width: 300px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+}
+
+/* section.flex-box{
+    display: grid;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(182, 86, 86);
+    grid-template-columns: repeat(2, 1fr);
+} */

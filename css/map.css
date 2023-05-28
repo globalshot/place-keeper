@@ -1,0 +1,10 @@
+
+section.main-tab{
+    background-color: white;
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 200px;
+    margin-inline: 30px;
+    gap: 20px;
+    grid-template-columns: 5fr 4fr;
+}
